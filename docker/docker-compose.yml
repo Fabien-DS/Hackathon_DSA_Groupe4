@@ -13,13 +13,13 @@ services:
     tty: true
     env_file:
       - ../.env
-    deploy:
-      resources:
-        reservations:
-          devices:
-          - driver: nvidia
-            count: all
-            capabilities: [compute, utility]
+#    deploy:
+#      resources:
+#        reservations:
+#          devices:
+#          - driver: nvidia
+#            count: all
+#            capabilities: [compute, utility]
   
 
   mlflow:
