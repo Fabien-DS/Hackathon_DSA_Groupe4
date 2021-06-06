@@ -13,7 +13,7 @@ services:
     container_name: "hackathondsa_groupe4_develop_${USER}"
     tty: true
     env_file:
-      - ../.env
+      - ../env
 #    deploy:
 #      resources:
 #        reservations:
@@ -35,4 +35,4 @@ services:
     container_name: "hackathondsa_groupe4_mlflow_${USER}"
     tty: true
     env_file:
-      - ../.env
+      - ../env
