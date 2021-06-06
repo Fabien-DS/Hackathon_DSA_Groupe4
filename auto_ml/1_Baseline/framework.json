@@ -1,5 +1,5 @@
 {
-    "uid": "62c3755f-eb58-4028-a9aa-0c296e011e71",
+    "uid": "a4740151-af9e-456a-8430-c09395555917",
     "name": "1_Baseline",
     "preprocessing": [
         {
@@ -18,7 +18,7 @@
             "library_version": "0.24.2",
             "algorithm_name": "Baseline Regressor",
             "algorithm_short_name": "Baseline",
-            "uid": "3a4a4b59-3f2b-460e-bfe1-2e6c95e29cee",
+            "uid": "8a6c7b39-21b9-4365-ac0c-1a4cec5085fd",
             "params": {
                 "model_type": "Baseline",
                 "ml_task": "regression",
@@ -73,6 +73,6 @@
     "predictions_fname": "1_Baseline/predictions_validation.csv",
     "metric_name": "rmse",
     "final_loss": 8.974685528688623,
-    "train_time": 0.4953582286834717,
+    "train_time": 0.21727943420410156,
     "is_stacked": false
 }

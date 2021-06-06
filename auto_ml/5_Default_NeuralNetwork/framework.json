@@ -1,5 +1,5 @@
 {
-    "uid": "f89edc61-0fdb-41f0-86ed-529aa08dc03e",
+    "uid": "aefff6d2-bbe3-409c-9772-28ca2b301c8b",
     "name": "5_Default_NeuralNetwork",
     "preprocessing": [
         {
@@ -136,7 +136,7 @@
             "library_version": "0.24.2",
             "algorithm_name": "Neural Network",
             "algorithm_short_name": "Neural Network",
-            "uid": "e101712c-b380-439b-87bd-0162bdfc0779",
+            "uid": "ddaf29ad-e28b-4091-9f37-6c9859042c55",
             "params": {
                 "model_type": "Neural Network",
                 "ml_task": "regression",
@@ -234,6 +234,6 @@
     "predictions_fname": "5_Default_NeuralNetwork/predictions_validation.csv",
     "metric_name": "rmse",
     "final_loss": 3.5213592953891113,
-    "train_time": 0.44994497299194336,
+    "train_time": 0.4002833366394043,
     "is_stacked": false
 }

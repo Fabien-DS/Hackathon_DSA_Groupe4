@@ -1,2 +1,4 @@
-pandas-profiling==3.0.0
-mljar-supervised==0.10.4
+pandas-profiling
+mljar-supervised
+explainerdashboard
+interpret

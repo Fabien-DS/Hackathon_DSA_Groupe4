@@ -1,5 +1,5 @@
 {
-    "uid": "49db5a14-3e30-4c09-ba17-ab0bb6bf2654",
+    "uid": "7bcad7a2-75c7-418d-8805-448bed921e27",
     "name": "2_DecisionTree",
     "preprocessing": [
         {
@@ -18,7 +18,7 @@
             "library_version": "0.24.2",
             "algorithm_name": "Decision Tree",
             "algorithm_short_name": "Decision Tree",
-            "uid": "7aa3b3ba-0ea5-48e5-b7c7-16b2b1a91d2f",
+            "uid": "7372a914-6959-4e3b-87f5-28d2fcd169f8",
             "params": {
                 "model_type": "Decision Tree",
                 "ml_task": "regression",
@@ -79,6 +79,6 @@
     "predictions_fname": "2_DecisionTree/predictions_validation.csv",
     "metric_name": "rmse",
     "final_loss": 6.086591328194163,
-    "train_time": 3.982865571975708,
+    "train_time": 2.9877283573150635,
     "is_stacked": false
 }
