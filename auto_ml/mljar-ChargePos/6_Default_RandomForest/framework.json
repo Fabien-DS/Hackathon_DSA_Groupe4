@@ -1,0 +1,288 @@
+{
+    "uid": "04ad4494-44e9-4b5b-9a58-7ac8f4416fb6",
+    "name": "6_Default_RandomForest",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "NB_PIECES": 2.0,
+                        "NBSIN_TYPE2_AN2": 0.0
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "FORMULE": {
+                            "ALL_INCLUDE": 0,
+                            "CONFORT": 1,
+                            "ESSENTIEL": 2,
+                            "MEDIUM": 3
+                        },
+                        "TYPE_RESIDENCE": {
+                            "PRINCIPALE": 0,
+                            "SECONDAIRE": 1
+                        },
+                        "TYPE_HABITATION": {
+                            "APPARTEMENT": 0,
+                            "MAISON": 1
+                        },
+                        "SITUATION_JURIDIQUE": {
+                            "LOCATAIRE": 0,
+                            "PROPRIO": 1
+                        },
+                        "NIVEAU_JURIDIQUE": {
+                            "JUR1": 0,
+                            "JUR2": 1
+                        },
+                        "OBJETS_DE_VALEUR": {
+                            "NIVEAU_1": 0,
+                            "NIVEAU_2": 1
+                        },
+                        "ZONIER": {
+                            "A1": 0,
+                            "A10": 1,
+                            "A11": 2,
+                            "A12": 3,
+                            "A13": 4,
+                            "A14": 5,
+                            "A2": 6,
+                            "A3": 7,
+                            "A6": 8,
+                            "A7": 9,
+                            "A9": 10,
+                            "B1": 11,
+                            "B10": 12,
+                            "B12": 13,
+                            "B13": 14,
+                            "B17": 15,
+                            "B19": 16,
+                            "B2": 17,
+                            "B23": 18,
+                            "B24": 19,
+                            "B25": 20,
+                            "B26": 21,
+                            "B27": 22,
+                            "B28": 23,
+                            "B29": 24,
+                            "B3": 25,
+                            "B30": 26,
+                            "B32": 27,
+                            "B33": 28,
+                            "B34": 29,
+                            "B36": 30,
+                            "B39": 31,
+                            "B4": 32,
+                            "B40": 33,
+                            "B41": 34,
+                            "B43": 35,
+                            "B45": 36,
+                            "B6": 37,
+                            "B7": 38,
+                            "B9": 39,
+                            "C1": 40,
+                            "C10": 41,
+                            "C11": 42,
+                            "C12": 43,
+                            "C13": 44,
+                            "C14": 45,
+                            "C15": 46,
+                            "C16": 47,
+                            "C17": 48,
+                            "C18": 49,
+                            "C19": 50,
+                            "C2": 51,
+                            "C20": 52,
+                            "C21": 53,
+                            "C22": 54,
+                            "C23": 55,
+                            "C24": 56,
+                            "C3": 57,
+                            "C4": 58,
+                            "C5": 59,
+                            "C6": 60,
+                            "C7": 61,
+                            "C8": 62,
+                            "C9": 63
+                        }
+                    },
+                    "columns": [
+                        "FORMULE",
+                        "TYPE_RESIDENCE",
+                        "TYPE_HABITATION",
+                        "SITUATION_JURIDIQUE",
+                        "NIVEAU_JURIDIQUE",
+                        "OBJETS_DE_VALEUR",
+                        "ZONIER"
+                    ]
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    1.4980163585059594
+                ],
+                "mean": [
+                    6.330475639051462
+                ],
+                "var": [
+                    2.2440530103514553
+                ],
+                "n_samples_seen": 1623,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    5.07
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "FORMULE": [
+                        "categorical_to_int"
+                    ],
+                    "TYPE_RESIDENCE": [
+                        "categorical_to_int"
+                    ],
+                    "TYPE_HABITATION": [
+                        "categorical_to_int"
+                    ],
+                    "NB_PIECES": [
+                        "na_fill_median"
+                    ],
+                    "SITUATION_JURIDIQUE": [
+                        "categorical_to_int"
+                    ],
+                    "NIVEAU_JURIDIQUE": [
+                        "categorical_to_int"
+                    ],
+                    "OBJETS_DE_VALEUR": [
+                        "categorical_to_int"
+                    ],
+                    "ZONIER": [
+                        "categorical_to_int"
+                    ],
+                    "NBSIN_TYPE2_AN2": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "0.24.2",
+            "algorithm_name": "Random Forest",
+            "algorithm_short_name": "Random Forest",
+            "uid": "351b123e-cecf-4d04-bd34-4882399e2d28",
+            "params": {
+                "model_type": "Random Forest",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "criterion": "mse",
+                "max_features": 0.9,
+                "min_samples_split": 30,
+                "max_depth": 4,
+                "seed": 6,
+                "eval_metric_name": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "trees_in_step": 100,
+            "train_cant_improve_limit": 1,
+            "min_steps": 1,
+            "max_steps": 50,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "FORMULE": [
+                    "categorical_to_int"
+                ],
+                "TYPE_RESIDENCE": [
+                    "categorical_to_int"
+                ],
+                "TYPE_HABITATION": [
+                    "categorical_to_int"
+                ],
+                "NB_PIECES": [
+                    "na_fill_median"
+                ],
+                "SITUATION_JURIDIQUE": [
+                    "categorical_to_int"
+                ],
+                "NIVEAU_JURIDIQUE": [
+                    "categorical_to_int"
+                ],
+                "OBJETS_DE_VALEUR": [
+                    "categorical_to_int"
+                ],
+                "ZONIER": [
+                    "categorical_to_int"
+                ],
+                "NBSIN_TYPE2_AN2": [
+                    "na_fill_median"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "/mnt/auto_ml/mljar-ChargePos/X.data",
+            "y_path": "/mnt/auto_ml/mljar-ChargePos/y.data",
+            "results_path": "/mnt/auto_ml/mljar-ChargePos"
+        },
+        "learner": {
+            "model_type": "Random Forest",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "criterion": "mse",
+            "max_features": 0.9,
+            "min_samples_split": 30,
+            "max_depth": 4,
+            "seed": 6,
+            "eval_metric_name": "rmse",
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "6_Default_RandomForest",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "6_Default_RandomForest/learner_fold_0.random_forest"
+    ],
+    "predictions_fname": "6_Default_RandomForest/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 2596.7630483156904,
+    "train_time": 2.347149610519409,
+    "is_stacked": false
+}

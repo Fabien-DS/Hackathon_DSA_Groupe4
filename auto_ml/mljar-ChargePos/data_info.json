@@ -1,0 +1,78 @@
+{
+    "columns": [
+        "EXPO",
+        "FORMULE",
+        "TYPE_RESIDENCE",
+        "TYPE_HABITATION",
+        "NB_PIECES",
+        "SITUATION_JURIDIQUE",
+        "NIVEAU_JURIDIQUE",
+        "VALEUR_DES_BIENS",
+        "OBJETS_DE_VALEUR",
+        "ZONIER",
+        "NBSIN_TYPE1_AN1",
+        "NBSIN_TYPE1_AN3",
+        "NBSIN_TYPE2_AN1",
+        "NBSIN_TYPE2_AN2",
+        "NBSIN_TYPE2_AN3",
+        "ANNEE"
+    ],
+    "rows": 2164,
+    "cols": 16,
+    "target_is_numeric": true,
+    "columns_info": {
+        "EXPO": [
+            "scale"
+        ],
+        "FORMULE": [
+            "categorical",
+            "few_categories"
+        ],
+        "TYPE_RESIDENCE": [
+            "categorical",
+            "few_categories"
+        ],
+        "TYPE_HABITATION": [
+            "categorical",
+            "few_categories"
+        ],
+        "NB_PIECES": [
+            "missing_values",
+            "scale"
+        ],
+        "SITUATION_JURIDIQUE": [
+            "categorical",
+            "few_categories"
+        ],
+        "NIVEAU_JURIDIQUE": [
+            "categorical",
+            "few_categories"
+        ],
+        "VALEUR_DES_BIENS": [
+            "scale"
+        ],
+        "OBJETS_DE_VALEUR": [
+            "categorical",
+            "few_categories"
+        ],
+        "ZONIER": [
+            "categorical",
+            "many_categories"
+        ],
+        "NBSIN_TYPE1_AN1": [],
+        "NBSIN_TYPE1_AN3": [],
+        "NBSIN_TYPE2_AN1": [],
+        "NBSIN_TYPE2_AN2": [
+            "missing_values"
+        ],
+        "NBSIN_TYPE2_AN3": [],
+        "ANNEE": [
+            "scale"
+        ]
+    },
+    "target_info": [
+        "scale_log"
+    ],
+    "n_features": 16,
+    "is_sample_weighted": false
+}

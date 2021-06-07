@@ -1,0 +1,16 @@
+if (TYPE_HABITATION > 0.5) and (EXPO > 0.625) and (NBSIN_TYPE2_AN1 <= 0.5) then response: 938.002 | based on 733 samples
+
+if (TYPE_HABITATION <= 0.5) and (ZONIER <= 48.0) and (VALEUR_DES_BIENS > 1750.0) then response: 1707.664 | based on 479 samples
+
+if (TYPE_HABITATION <= 0.5) and (ZONIER > 48.0) and (NBSIN_TYPE1_AN3 <= 1.5) then response: 2221.837 | based on 256 samples
+
+if (TYPE_HABITATION > 0.5) and (EXPO <= 0.625) and (EXPO <= 0.622) then response: 1606.447 | based on 110 samples
+
+if (TYPE_HABITATION > 0.5) and (EXPO > 0.625) and (NBSIN_TYPE2_AN1 > 0.5) then response: 468.81 | based on 32 samples
+
+if (TYPE_HABITATION <= 0.5) and (ZONIER > 48.0) and (NBSIN_TYPE1_AN3 > 1.5) then response: 5043.217 | based on 7 samples
+
+if (TYPE_HABITATION <= 0.5) and (ZONIER <= 48.0) and (VALEUR_DES_BIENS <= 1750.0) then response: 4581.796 | based on 5 samples
+
+if (TYPE_HABITATION > 0.5) and (EXPO <= 0.625) and (EXPO > 0.622) then response: 12134.95 | based on 1 samples
+

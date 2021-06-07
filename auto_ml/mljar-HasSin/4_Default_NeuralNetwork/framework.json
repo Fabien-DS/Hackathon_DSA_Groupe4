@@ -1,0 +1,370 @@
+{
+    "uid": "ad7ec2d2-f211-45aa-8bd3-141d960cd3a0",
+    "name": "4_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "NB_PIECES": 2.0,
+                        "NBSIN_TYPE2_AN2": 0.0
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "FORMULE": {
+                            "ALL_INCLUDE": 0,
+                            "CONFORT": 1,
+                            "ESSENTIEL": 2,
+                            "MEDIUM": 3
+                        },
+                        "TYPE_RESIDENCE": {
+                            "PRINCIPALE": 0,
+                            "SECONDAIRE": 1
+                        },
+                        "TYPE_HABITATION": {
+                            "APPARTEMENT": 0,
+                            "MAISON": 1
+                        },
+                        "SITUATION_JURIDIQUE": {
+                            "LOCATAIRE": 0,
+                            "PROPRIO": 1
+                        },
+                        "NIVEAU_JURIDIQUE": {
+                            "JUR1": 0,
+                            "JUR2": 1
+                        },
+                        "OBJETS_DE_VALEUR": {
+                            "NIVEAU_1": 0,
+                            "NIVEAU_2": 1
+                        },
+                        "ZONIER": {
+                            "A1": 0,
+                            "A10": 1,
+                            "A11": 2,
+                            "A12": 3,
+                            "A13": 4,
+                            "A14": 5,
+                            "A2": 6,
+                            "A3": 7,
+                            "A4": 8,
+                            "A5": 9,
+                            "A6": 10,
+                            "A7": 11,
+                            "A8": 12,
+                            "A9": 13,
+                            "B1": 14,
+                            "B10": 15,
+                            "B11": 16,
+                            "B12": 17,
+                            "B13": 18,
+                            "B14": 19,
+                            "B16": 20,
+                            "B17": 21,
+                            "B18": 22,
+                            "B19": 23,
+                            "B2": 24,
+                            "B20": 25,
+                            "B21": 26,
+                            "B22": 27,
+                            "B23": 28,
+                            "B24": 29,
+                            "B25": 30,
+                            "B26": 31,
+                            "B27": 32,
+                            "B28": 33,
+                            "B29": 34,
+                            "B3": 35,
+                            "B30": 36,
+                            "B31": 37,
+                            "B32": 38,
+                            "B33": 39,
+                            "B34": 40,
+                            "B35": 41,
+                            "B36": 42,
+                            "B37": 43,
+                            "B38": 44,
+                            "B39": 45,
+                            "B4": 46,
+                            "B40": 47,
+                            "B41": 48,
+                            "B42": 49,
+                            "B43": 50,
+                            "B44": 51,
+                            "B45": 52,
+                            "B5": 53,
+                            "B6": 54,
+                            "B7": 55,
+                            "B8": 56,
+                            "B9": 57,
+                            "C1": 58,
+                            "C10": 59,
+                            "C11": 60,
+                            "C12": 61,
+                            "C13": 62,
+                            "C14": 63,
+                            "C15": 64,
+                            "C16": 65,
+                            "C17": 66,
+                            "C18": 67,
+                            "C19": 68,
+                            "C2": 69,
+                            "C20": 70,
+                            "C21": 71,
+                            "C22": 72,
+                            "C23": 73,
+                            "C24": 74,
+                            "C3": 75,
+                            "C4": 76,
+                            "C5": 77,
+                            "C6": 78,
+                            "C7": 79,
+                            "C8": 80,
+                            "C9": 81
+                        }
+                    },
+                    "columns": [
+                        "FORMULE",
+                        "TYPE_RESIDENCE",
+                        "TYPE_HABITATION",
+                        "SITUATION_JURIDIQUE",
+                        "NIVEAU_JURIDIQUE",
+                        "OBJETS_DE_VALEUR",
+                        "ZONIER"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        0.296908296875459,
+                        0.9084884087896717,
+                        0.3663138420350326,
+                        0.4982377301482999,
+                        0.8972626403896423,
+                        0.49682972543889703,
+                        0.11446115842644271,
+                        19496.4709718661,
+                        0.24212192791796183,
+                        25.806423540326985,
+                        0.8155234316157621
+                    ],
+                    "mean": [
+                        0.8375313659084902,
+                        1.5992504550808437,
+                        0.15968519113395438,
+                        0.5419423921190706,
+                        2.021094335581968,
+                        0.443784131063283,
+                        0.013277652853624585,
+                        16603.506799443196,
+                        0.06253346182674804,
+                        52.39298640111361,
+                        2016.9692472427455
+                    ],
+                    "var": [
+                        0.08815453675348568,
+                        0.8253511889051898,
+                        0.13418583086646682,
+                        0.2482408357433301,
+                        0.8050802458389925,
+                        0.24683977607968982,
+                        0.013101356788323217,
+                        380112380.3568175,
+                        0.058623027978710704,
+                        665.9714959427428,
+                        0.6650784675143486
+                    ],
+                    "n_samples_seen": 93390,
+                    "n_features_in": 11,
+                    "columns": [
+                        "EXPO",
+                        "FORMULE",
+                        "TYPE_RESIDENCE",
+                        "TYPE_HABITATION",
+                        "NB_PIECES",
+                        "SITUATION_JURIDIQUE",
+                        "NIVEAU_JURIDIQUE",
+                        "VALEUR_DES_BIENS",
+                        "OBJETS_DE_VALEUR",
+                        "ZONIER",
+                        "ANNEE"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "EXPO": [
+                        "scale_normal"
+                    ],
+                    "FORMULE": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "TYPE_RESIDENCE": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "TYPE_HABITATION": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "NB_PIECES": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "SITUATION_JURIDIQUE": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "NIVEAU_JURIDIQUE": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "VALEUR_DES_BIENS": [
+                        "scale_normal"
+                    ],
+                    "OBJETS_DE_VALEUR": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "ZONIER": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "NBSIN_TYPE2_AN2": [
+                        "na_fill_median"
+                    ],
+                    "ANNEE": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "0.24.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "125cbae7-925d-4ce8-948f-db50649069f0",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 4,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "EXPO": [
+                    "scale_normal"
+                ],
+                "FORMULE": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "TYPE_RESIDENCE": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "TYPE_HABITATION": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "NB_PIECES": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "SITUATION_JURIDIQUE": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "NIVEAU_JURIDIQUE": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "VALEUR_DES_BIENS": [
+                    "scale_normal"
+                ],
+                "OBJETS_DE_VALEUR": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "ZONIER": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "NBSIN_TYPE2_AN2": [
+                    "na_fill_median"
+                ],
+                "ANNEE": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "/mnt/auto_ml/mljar-HasSin/X.data",
+            "y_path": "/mnt/auto_ml/mljar-HasSin/y.data",
+            "results_path": "/mnt/auto_ml/mljar-HasSin"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 4,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "4_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "4_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.08575960602752021,
+    "train_time": 15.278159856796265,
+    "is_stacked": false,
+    "threshold": 0.057552017019996016
+}

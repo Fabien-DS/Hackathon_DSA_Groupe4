@@ -1,0 +1,16 @@
+if (VALEUR_DES_BIENS > 6250.0) and (ZONIER > 46.5) and (EXPO > 0.375) then class: 0 (proba: 97.12%) | based on 31,876 samples
+
+if (VALEUR_DES_BIENS <= 6250.0) and (ZONIER > 45.5) and (EXPO > 0.293) then class: 0 (proba: 98.53%) | based on 22,033 samples
+
+if (VALEUR_DES_BIENS > 6250.0) and (ZONIER <= 46.5) and (NB_PIECES > 2.5) then class: 0 (proba: 98.19%) | based on 11,492 samples
+
+if (VALEUR_DES_BIENS > 6250.0) and (ZONIER <= 46.5) and (NB_PIECES <= 2.5) then class: 0 (proba: 99.07%) | based on 10,503 samples
+
+if (VALEUR_DES_BIENS <= 6250.0) and (ZONIER <= 45.5) and (NB_PIECES <= 2.5) then class: 0 (proba: 99.69%) | based on 8,761 samples
+
+if (VALEUR_DES_BIENS <= 6250.0) and (ZONIER > 45.5) and (EXPO <= 0.293) then class: 0 (proba: 99.79%) | based on 3,847 samples
+
+if (VALEUR_DES_BIENS > 6250.0) and (ZONIER > 46.5) and (EXPO <= 0.375) then class: 0 (proba: 99.3%) | based on 3,307 samples
+
+if (VALEUR_DES_BIENS <= 6250.0) and (ZONIER <= 45.5) and (NB_PIECES > 2.5) then class: 0 (proba: 98.92%) | based on 1,571 samples
+
