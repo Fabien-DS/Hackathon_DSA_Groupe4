@@ -4,3 +4,4 @@ explainerdashboard
 interpret
 pycaret
 plotly-geo==1.0.0
+jupyter-dash
